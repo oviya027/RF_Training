@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 3.2.2 (Python 3.9.1 on win32)" generated="20210329 14:50:29.362" rpa="false">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Flipkart Chrome" source="C:\Users\user\Desktop\RF_Training\testsBook\flipkart_chrome.robot">
+<test id="s1-s1-t1" name="User should be able to Land on Flipkart Page on Chrome Browser">
+<kw name="Open Flipkart Page in Chrome" library="instructions">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url_home}</arg>
+<arg>${brows}</arg>
+</arguments>
+<msg timestamp="20210329 14:50:01.090" level="INFO">Opening browser 'gc' to base url 'https://www.flipkart.com/'.</msg>
+<status status="PASS" starttime="20210329 14:50:01.090" endtime="20210329 14:50:09.694"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210329 14:50:09.694" endtime="20210329 14:50:09.916"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20210329 14:50:13.933" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210329 14:50:09.916" endtime="20210329 14:50:13.933"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step1</arg>
+</arguments>
+<status status="PASS" starttime="20210329 14:50:13.933" endtime="20210329 14:50:13.933"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:01.090" endtime="20210329 14:50:13.933"></status>
+</kw>
+<kw name="Verify Home Page Title" library="instructions">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>${Expected_homePage}</arg>
+</arguments>
+<msg timestamp="20210329 14:50:13.933" level="INFO">Page title is 'Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!'.</msg>
+<status status="PASS" starttime="20210329 14:50:13.933" endtime="20210329 14:50:13.933"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0, 500)</arg>
+</arguments>
+<msg timestamp="20210329 14:50:13.933" level="INFO">Executing JavaScript:
+window.scrollTo(0, 500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20210329 14:50:13.933" endtime="20210329 14:50:13.953"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step2</arg>
+</arguments>
+<status status="PASS" starttime="20210329 14:50:13.953" endtime="20210329 14:50:13.961"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:13.933" endtime="20210329 14:50:13.961"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:01.090" endtime="20210329 14:50:13.961" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="User should Enter their Login Credentials to sign in">
+<kw name="Enter Login Details (Mobile or Email)" library="instructions">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>xpath=//input[@class='_2IX_2- VJZDxU']</arg>
+</arguments>
+<assign>
+<var>${Enter_Mobile_Number}</var>
+</assign>
+<msg timestamp="20210329 14:50:13.996" level="INFO">${Enter_Mobile_Number} = xpath=//input[@class='_2IX_2- VJZDxU']</msg>
+<status status="PASS" starttime="20210329 14:50:13.996" endtime="20210329 14:50:13.996"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Enter_Mobile_Number}</arg>
+<arg>${Mobile_Number}</arg>
+</arguments>
+<msg timestamp="20210329 14:50:13.996" level="INFO">Typing text '7395985567' into text field 'xpath=//input[@class='_2IX_2- VJZDxU']'.</msg>
+<status status="PASS" starttime="20210329 14:50:13.996" endtime="20210329 14:50:14.171"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step3</arg>
+</arguments>
+<status status="PASS" starttime="20210329 14:50:14.171" endtime="20210329 14:50:14.171"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:13.996" endtime="20210329 14:50:14.171"></status>
+</kw>
+<kw name="Enter Login Details (Password)" library="instructions">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>xpath=//input[@type='password']</arg>
+</arguments>
+<assign>
+<var>${Enter_Password}</var>
+</assign>
+<msg timestamp="20210329 14:50:14.173" level="INFO">${Enter_Password} = xpath=//input[@type='password']</msg>
+<status status="PASS" starttime="20210329 14:50:14.173" endtime="20210329 14:50:14.173"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Enter_Password}</arg>
+<arg>${Account_password}</arg>
+</arguments>
+<msg timestamp="20210329 14:50:14.173" level="INFO">Typing text 'password*123' into text field 'xpath=//input[@type='password']'.</msg>
+<status status="PASS" starttime="20210329 14:50:14.173" endtime="20210329 14:50:14.442"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@class='_1D1L_j']/button</arg>
+</arguments>
+<msg timestamp="20210329 14:50:14.442" level="INFO">Clicking element 'xpath=//div[@class='_1D1L_j']/button'.</msg>
+<status status="PASS" starttime="20210329 14:50:14.442" endtime="20210329 14:50:14.628"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step4</arg>
+</arguments>
+<status status="PASS" starttime="20210329 14:50:14.628" endtime="20210329 14:50:14.628"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:14.171" endtime="20210329 14:50:14.628"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:13.963" endtime="20210329 14:50:14.628" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="User can Search for the product they require">
+<kw name="Enter Product in search bar" library="instructions">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:q</arg>
+<arg>${product_name}</arg>
+</arguments>
+<msg timestamp="20210329 14:50:14.636" level="INFO">Typing text 'APPLE iPhone 12 (White, 64 GB)' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20210329 14:50:14.636" endtime="20210329 14:50:15.111"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${search_bar}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20210329 14:50:15.111" level="INFO">Sending key(s) ('ENTER',) to xpath=//*[@id="container"]/div/div[1]/div[1]/div[2]/div[2]/form/div/div/input element.</msg>
+<msg timestamp="20210329 14:50:25.485" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20210329 14:50:25.486" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20210329 14:50:15.111" endtime="20210329 14:50:25.520"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step5</arg>
+</arguments>
+<status status="PASS" starttime="20210329 14:50:25.520" endtime="20210329 14:50:25.521"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:14.636" endtime="20210329 14:50:25.521"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:14.636" endtime="20210329 14:50:25.521" critical="yes"></status>
+</test>
+<test id="s1-s1-t4" name="Close the Browser">
+<kw name="Close the Browser" library="instructions">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210329 14:50:25.525" endtime="20210329 14:50:28.862"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step7</arg>
+</arguments>
+<status status="PASS" starttime="20210329 14:50:28.862" endtime="20210329 14:50:28.862"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:25.524" endtime="20210329 14:50:28.862"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:25.523" endtime="20210329 14:50:28.862" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210329 14:50:00.669" endtime="20210329 14:50:28.862"></status>
+</suite>
+<suite id="s1-s2" name="Flipkart Firefox" source="C:\Users\user\Desktop\RF_Training\testsBook\flipkart_firefox.robot">
+<test id="s1-s2-t1" name="User should be able to Land on Flipkart Page on Firefox Browser">
+<kw name="Open Flipkart Page in Firefox" library="instructions">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url_home}</arg>
+<arg>${brows_f}</arg>
+</arguments>
+<msg timestamp="20210329 14:50:01.090" level="INFO">Opening browser 'firefox' to base url 'https://www.flipkart.com/'.</msg>
+<msg timestamp="20210329 14:50:01.090" level="INFO">Firefox driver log is always forced to to: C:\Users\user\Desktop\RF_Training\pabot_results\1\geckodriver-1.log</msg>
+<status status="PASS" starttime="20210329 14:50:01.090" endtime="20210329 14:50:19.709"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210329 14:50:19.709" endtime="20210329 14:50:19.721"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20210329 14:50:23.726" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210329 14:50:19.721" endtime="20210329 14:50:23.726"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step1</arg>
+</arguments>
+<status status="PASS" starttime="20210329 14:50:23.726" endtime="20210329 14:50:23.726"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:01.090" endtime="20210329 14:50:23.726"></status>
+</kw>
+<kw name="Verify Home Page Title" library="instructions">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>${Expected_homePage}</arg>
+</arguments>
+<msg timestamp="20210329 14:50:23.734" level="INFO">Page title is 'Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!'.</msg>
+<status status="PASS" starttime="20210329 14:50:23.726" endtime="20210329 14:50:23.734"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0, 500)</arg>
+</arguments>
+<msg timestamp="20210329 14:50:23.734" level="INFO">Executing JavaScript:
+window.scrollTo(0, 500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20210329 14:50:23.734" endtime="20210329 14:50:23.742"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step2</arg>
+</arguments>
+<status status="PASS" starttime="20210329 14:50:23.750" endtime="20210329 14:50:23.750"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:23.726" endtime="20210329 14:50:23.750"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:01.090" endtime="20210329 14:50:23.750" critical="yes"></status>
+</test>
+<test id="s1-s2-t2" name="User should Enter their Login Credentials to sign in">
+<kw name="Enter Login Details (Mobile or Email)" library="instructions">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>xpath=//input[@class='_2IX_2- VJZDxU']</arg>
+</arguments>
+<assign>
+<var>${Enter_Mobile_Number}</var>
+</assign>
+<msg timestamp="20210329 14:50:23.782" level="INFO">${Enter_Mobile_Number} = xpath=//input[@class='_2IX_2- VJZDxU']</msg>
+<status status="PASS" starttime="20210329 14:50:23.782" endtime="20210329 14:50:23.782"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Enter_Mobile_Number}</arg>
+<arg>${Mobile_Number}</arg>
+</arguments>
+<msg timestamp="20210329 14:50:23.782" level="INFO">Typing text '7395985567' into text field 'xpath=//input[@class='_2IX_2- VJZDxU']'.</msg>
+<status status="PASS" starttime="20210329 14:50:23.782" endtime="20210329 14:50:23.968"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step3</arg>
+</arguments>
+<status status="PASS" starttime="20210329 14:50:23.968" endtime="20210329 14:50:23.968"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:23.782" endtime="20210329 14:50:23.968"></status>
+</kw>
+<kw name="Enter Login Details (Password)" library="instructions">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>xpath=//input[@type='password']</arg>
+</arguments>
+<assign>
+<var>${Enter_Password}</var>
+</assign>
+<msg timestamp="20210329 14:50:23.968" level="INFO">${Enter_Password} = xpath=//input[@type='password']</msg>
+<status status="PASS" starttime="20210329 14:50:23.968" endtime="20210329 14:50:23.968"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Enter_Password}</arg>
+<arg>${Account_password}</arg>
+</arguments>
+<msg timestamp="20210329 14:50:23.976" level="INFO">Typing text 'password*123' into text field 'xpath=//input[@type='password']'.</msg>
+<status status="PASS" starttime="20210329 14:50:23.968" endtime="20210329 14:50:24.083"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@class='_1D1L_j']/button</arg>
+</arguments>
+<msg timestamp="20210329 14:50:24.083" level="INFO">Clicking element 'xpath=//div[@class='_1D1L_j']/button'.</msg>
+<status status="PASS" starttime="20210329 14:50:24.083" endtime="20210329 14:50:24.403"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step4</arg>
+</arguments>
+<status status="PASS" starttime="20210329 14:50:24.403" endtime="20210329 14:50:24.403"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:23.968" endtime="20210329 14:50:24.403"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:23.750" endtime="20210329 14:50:24.403" critical="yes"></status>
+</test>
+<test id="s1-s2-t3" name="User can Search for the product they require">
+<kw name="Enter Product in search bar" library="instructions">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:q</arg>
+<arg>${product_name}</arg>
+</arguments>
+<msg timestamp="20210329 14:50:24.411" level="INFO">Typing text 'APPLE iPhone 12 (White, 64 GB)' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20210329 14:50:24.403" endtime="20210329 14:50:25.130"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${search_bar}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20210329 14:50:25.138" level="INFO">Sending key(s) ('ENTER',) to xpath=//*[@id="container"]/div/div[1]/div[1]/div[2]/div[2]/form/div/div/input element.</msg>
+<msg timestamp="20210329 14:50:25.776" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20210329 14:50:25.776" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20210329 14:50:25.130" endtime="20210329 14:50:25.840"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step5</arg>
+</arguments>
+<status status="PASS" starttime="20210329 14:50:25.840" endtime="20210329 14:50:25.841"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:24.403" endtime="20210329 14:50:25.841"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:24.403" endtime="20210329 14:50:25.842" critical="yes"></status>
+</test>
+<test id="s1-s2-t4" name="Close the Browser">
+<kw name="Close the Browser" library="instructions">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210329 14:50:25.845" endtime="20210329 14:50:28.940"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step7</arg>
+</arguments>
+<status status="PASS" starttime="20210329 14:50:28.940" endtime="20210329 14:50:28.940"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:25.844" endtime="20210329 14:50:28.940"></status>
+</kw>
+<status status="PASS" starttime="20210329 14:50:25.843" endtime="20210329 14:50:28.940" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210329 14:50:00.653" endtime="20210329 14:50:28.940"></status>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 2 executions.</doc>
+<status status="PASS" starttime="20210329 14:50:00.606" endtime="20210329 14:50:28.956"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0">Critical Tests</stat>
+<stat pass="8" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="8" fail="0" id="s1" name="Suites">Suites</stat>
+<stat pass="4" fail="0" id="s1-s1" name="Flipkart Chrome">Suites.Flipkart Chrome</stat>
+<stat pass="4" fail="0" id="s1-s2" name="Flipkart Firefox">Suites.Flipkart Firefox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,28 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Flipkart Chrome                                                        
+==============================================================================
+User should be able to Land on Flipkart Page on Chrome Browser        Step1
+Step2
+| PASS |
+------------------------------------------------------------------------------
+User should Enter their Login Credentials to sign in                  Step3
+Step4
+| PASS |
+------------------------------------------------------------------------------
+User can Search for the product they require                          Step5
+| PASS |
+------------------------------------------------------------------------------
+Close the Browser                                                     Step7
+| PASS |
+------------------------------------------------------------------------------
+Suites.Flipkart Chrome                                                | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+Output:  C:\Users\user\Desktop\RF_Training\pabot_results\0\output.xml
